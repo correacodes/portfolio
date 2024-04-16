@@ -6,6 +6,12 @@
     <title>Portfólio de Mateus Correa</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
+    <style>
+        .project-image {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
 </head>
 <body class="bg-dark text-light">
     <header class="bg-dark text-white text-center py-5">
@@ -22,9 +28,19 @@
         <h2 class="text-light">Projetos</h2>
         <div class="card-deck">
             <div class="card bg-secondary text-white">
+                <img src="projeto1.jpg" class="card-img-top project-image" alt="Projeto 1">
                 <div class="card-body">
                     <h5 class="card-title">Site Pessoal</h5>
                     <p class="card-text">Um site pessoal criado usando HTML, CSS e Bootstrap.</p>
+                    <a href="#" class="btn btn-primary">Ver mais</a>
+                </div>
+            </div>
+            <div class="card bg-secondary text-white">
+                <img src="projeto2.jpg" class="card-img-top project-image" alt="Projeto 2">
+                <div class="card-body">
+                    <h5 class="card-title">Projeto 2</h5>
+                    <p class="card-text">Descrição do projeto 2.</p>
+                    <a href="#" class="btn btn-primary">Ver mais</a>
                 </div>
             </div>
             <!-- Adicione mais projetos aqui -->
@@ -38,5 +54,13 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        // Adiciona funcionalidade de clicar em "Ver mais"
+        document.querySelectorAll('.btn-primary').forEach(item => {
+            item.addEventListener('click', event => {
+                alert('Em breve mais detalhes sobre este projeto!');
+            });
+        });
+    </script>
 </body>
 </html>

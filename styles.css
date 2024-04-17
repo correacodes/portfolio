@@ -1,101 +1,124 @@
-/* styles.css */
-
-/* Estilos gerais */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-.container {
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 0 15px;
+.menu-toggle {
+  display: none;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  cursor: pointer;
 }
 
-.text-center {
-    text-align: center;
+.menu {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #333;
+  padding: 20px;
 }
 
-.py-3 {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+.menu ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
-.py-5 {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+.menu ul li {
+  margin-bottom: 10px;
 }
 
-.mt-5 {
-    margin-top: 3rem;
+.menu ul li a {
+  color: #fff;
+  text-decoration: none;
 }
 
-.bg-dark {
-    background-color: #343a40 !important;
-    color: #fff;
-}
-
-.text-light {
-    color: #fff;
-}
-
-.btn-primary {
-    background-color: #007bff;
-    border-color: #007bff;
-}
-
-.btn-primary:hover {
-    background-color: #0056b3;
-    border-color: #0056b3;
-}
-
-/* Estilos específicos do header */
 header {
-    background-color: #343a40;
-    padding-top: 20px;
-    padding-bottom: 20px;
+  text-align: center;
+  padding: 50px 0;
 }
 
-header h1 {
-    font-size: 2.5rem;
+.profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
 }
 
-header p {
-    font-size: 1.25rem;
+.profile img {
+  width: 100px;
+  border-radius: 50%;
+  margin-right: 20px;
 }
 
-/* Estilos específicos do footer */
-footer {
-    background-color: #343a40;
+section {
+  padding: 50px 20px;
 }
 
-footer p {
-    margin-bottom: 0;
+.skills {
+  margin-top: 20px;
 }
 
-/* Estilos específicos da seção de projetos */
-.card-deck {
+.skills ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.skills ul li {
+  margin-right: 10px;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.project {
+  margin: 20px;
+}
+
+.project img {
+  width: 200px;
+}
+
+#contact form {
+  display: flex;
+  flex-direction: column;
+}
+
+#contact form label {
+  margin-bottom: 10px;
+}
+
+#contact form input,
+#contact form textarea {
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+#contact form button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+  .menu {
+    display: block;
+  }
+  nav ul {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.card {
-    flex: 0 0 calc(33.333% - 20px); /* Ajuste a largura das cartas conforme necessário */
-    margin-bottom: 20px;
-}
-
-.card-img-top {
-    max-width: 100%;
-    height: auto;
-}
-
-.card-title {
-    font-size: 1.25rem;
-    font-weight: bold;
-}
-
-.card-text {
-    font-size: 1rem;
+    flex-direction: column;
+  }
 }

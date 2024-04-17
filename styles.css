@@ -1,8 +1,101 @@
+/* styles.css */
+
+/* Estilos gerais */
 body {
-    color: #dcdcdc;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.py-3 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.py-5 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.mt-5 {
+    margin-top: 3rem;
+}
+
+.bg-dark {
+    background-color: #343a40 !important;
+    color: #fff;
+}
+
+.text-light {
+    color: #fff;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+/* Estilos específicos do header */
+header {
+    background-color: #343a40;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+header p {
+    font-size: 1.25rem;
+}
+
+/* Estilos específicos do footer */
+footer {
+    background-color: #343a40;
+}
+
+footer p {
+    margin-bottom: 0;
+}
+
+/* Estilos específicos da seção de projetos */
+.card-deck {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .card {
-    background-color: #343a40;
-    color: #dcdcdc;
+    flex: 0 0 calc(33.333% - 20px); /* Ajuste a largura das cartas conforme necessário */
+    margin-bottom: 20px;
+}
+
+.card-img-top {
+    max-width: 100%;
+    height: auto;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 1rem;
 }

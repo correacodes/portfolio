@@ -1,71 +1,66 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio | Mateus Correa - Desenvolvedor Web</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-    <header>
-        <div class="container text-center py-5">
-            <h1>Portfólio de Mateus Correa</h1>
-            <p>Estudante de Engenharia de Software | Desenvolvedor Web</p>
-        </div>
-    </header>
-
-    <main>
-        <section id="sobre" class="container mt-5">
-            <h2>Sobre mim</h2>
-            <p>Olá! Meu nome é Mateus Correa e sou um estudante de Engenharia de Software apaixonado por programação. Tenho habilidades em JavaScript, HTML, CSS e Bootstrap. Estou focado em aprender e crescer como desenvolvedor web.</p>
-        </section>
-
-        <section id="projetos" class="container mt-5">
-            <h2>Projetos</h2>
-            <div class="card-deck">
-                <div class="card bg-secondary text-white">
-                    <img src="projeto1.jpg" class="card-img-top" alt="Projeto 1">
-                    <div class="card-body">
-                        <h5 class="card-title">Site Pessoal</h5>
-                        <p class="card-text">Um site pessoal criado usando HTML, CSS e Bootstrap.</p>
-                        <a href="#" class="btn btn-primary">Ver mais</a>
-                    </div>
-                </div>
-                <div class="card bg-secondary text-white">
-                    <img src="projeto2.jpg" class="card-img-top" alt="Projeto 2">
-                    <div class="card-body">
-                        <h5 class="card-title">Projeto 2</h5>
-                        <p class="card-text">Descrição do projeto 2.</p>
-                        <a href="#" class="btn btn-primary">Ver mais</a>
-                    </div>
-                </div>
-                <!-- Adicione mais projetos aqui -->
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="container text-center py-3 mt-5">
-            &copy; 2024 Portfólio de Mateus Correa
-        </div>
-    </footer>
-
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script>
-        // Adiciona funcionalidade de clicar em "Ver mais"
-        document.querySelectorAll('.btn-primary').forEach(item => {
-            item.addEventListener('click', event => {
-                alert('Em breve mais detalhes sobre este projeto!');
-            });
-        });
-    </script>
+  <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+  <nav class="menu">
+    <ul>
+      <li><a href="#curriculo">Currículo</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+  </nav>
+  <header>
+    <h1>Portfólio</h1>
+    <div class="profile">
+      <img src="avatar.jpg" alt="Mateus Correa">
+      <p>Olá, eu sou o Mateus Correa :).<br>Desenvolvedor Front-End</p>
+    </div>
+  </header>
+  <section id="about">
+    <h2>Sobre Mim</h2>
+    <p>Sou um profissional versátil com experiência tanto como RPA Developer (Desenvolvedor de Automação Robótica de Processos) quanto como Web Developer (Desenvolvedor Web). Anteriormente, enquanto cursava Direito, descobri que minha verdadeira paixão sempre foi tecnologia. Fascinado pela Automação Robótica de Processos (RPA), busco desenvolver soluções inovadoras para diversos setores, aproveitando minha experiência na operação de escritórios e conhecimento em programação. Tenho habilidades em Python e UiPath para automação, além de expertise em criação de sites, lojas virtuais e programas web utilizando HTML, CSS, JavaScript e WordPress. Minha paixão por tecnologia me permite oferecer soluções inovadoras, combinando minha experiência em programação com conhecimentos em RPA e desenvolvimento web.</p>
+    <div class="skills">
+      <h3>Habilidades</h3>
+      <ul>
+        <li><img src="html-icon.png" alt="HTML"></li>
+        <li><img src="css-icon.png" alt="CSS"></li>
+        <li><img src="js-icon.png" alt="JavaScript"></li>
+        <li><img src="python-icon.png" alt="Python"></li>
+        <li><img src="uipath-icon.png" alt="UiPath"></li>
+        <!-- Adicione mais ícones conforme necessário -->
+      </ul>
+    </div>
+  </section>
+  <section id="projects">
+    <h2>Projetos</h2>
+    <div class="project">
+      <img src="project1.jpg" alt="Projeto 1">
+      <a href="#">Projeto 1</a>
+    </div>
+    <div class="project">
+      <img src="project2.jpg" alt="Projeto 2">
+      <a href="#">Projeto 2</a>
+    </div>
+    <!-- Adicione mais projetos conforme necessário -->
+  </section>
+  <section id="contact">
+    <h2>Contato</h2>
+    <p>Entre em contato comigo:</p>
+    <form>
+      <label for="name">Nome:</label>
+      <input type="text" id="name" name="name" required>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <label for="message">Mensagem:</label>
+      <textarea id="message" name="message" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+  <script src="script.js"></script>
 </body>
-
 </html>
